@@ -1,0 +1,62 @@
+<!-- 
+ Javascript is not working
+This is the source Video
+https://www.youtube.com/watch?v=91Q6RvKvd7o 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbuck</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" alt="Starbuck" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minm veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" alt="image1" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png')"></li>
+
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png')"></li>
+
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png')"></li>
+
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="instagram"></a></li>
+        </ul>
+    </section>
+    <script src="script.js">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').src = anything;
+        }
+    </script>
+</body>
+
+</html>

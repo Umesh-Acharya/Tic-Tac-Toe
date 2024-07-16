@@ -234,7 +234,12 @@ function filterTodo(e) {
 
 function saveLocalTodos(todo) {
     let todos;
+    // variable todos is declare
+
     if (localStorage.getItem("todos") === null) {
+        // this check if there is a item in local storage with the key names todos
+
+
         todos = [];
     } else {
         todos = JSON.parse(localStorage.getItem("todos"));
